@@ -1,0 +1,93 @@
+﻿================================================================
+n = 1000
+-- Dynamic Array ------------------------------------------------
+  build (insert_back x n)      :      0.007 ms
+  get(n/2)                     :   0.000002 ms/appel
+  find(valeur absente)         :   0.000503 ms/appel
+  insert_front                 :   0.000507 ms/appel
+  insert_back                  :   0.000005 ms/appel
+  remove_front                 :   0.001118 ms/appel
+  parcours complet (somme)     :      0.000 ms  (sum controle=10425560775260)
+-- Linked List --------------------------------------------------
+  build (insert_front x n)     :      0.064 ms
+  get(n/2)                     :   0.000735 ms/appel
+  find(valeur absente)         :   0.002040 ms/appel
+  insert_front                 :   0.000039 ms/appel
+  insert_back                  :   0.003149 ms/appel
+  remove_front                 :   0.000019 ms/appel
+  parcours complet (somme)     :      0.003 ms  (sum controle=10425560775260)
+-- Hash Table (good vs bad) --------------------------------------
+  [hash_good] build             :      0.043 ms  (chaine max=2)
+  [hash_good] contains(absent)  :   0.000004 ms/appel
+  [hash_bad]  build              :      0.049 ms  (chaine max=1000)
+  [hash_bad]  contains(absent)  :   0.001830 ms/appel
+================================================================
+n = 10000
+-- Dynamic Array ------------------------------------------------
+  build (insert_back x n)      :      0.085 ms
+  get(n/2)                     :   0.000002 ms/appel
+  find(valeur absente)         :   0.004441 ms/appel
+  insert_front                 :   0.004906 ms/appel
+  insert_back                  :   0.000005 ms/appel
+  remove_front                 :   0.008167 ms/appel
+  parcours complet (somme)     :      0.002 ms  (sum controle=106820134969980)
+-- Linked List --------------------------------------------------
+  build (insert_front x n)     :      0.531 ms
+  get(n/2)                     :   0.011334 ms/appel
+  find(valeur absente)         :   0.025480 ms/appel
+  insert_front                 :   0.000061 ms/appel
+  insert_back                  :   0.025188 ms/appel
+  remove_front                 :   0.000019 ms/appel
+  parcours complet (somme)     :      0.027 ms  (sum controle=106820134969980)
+-- Hash Table (good vs bad) --------------------------------------
+  [hash_good] build             :      0.535 ms  (chaine max=7)
+  [hash_good] contains(absent)  :   0.000004 ms/appel
+  [hash_bad]  build              :      0.570 ms  (chaine max=10000)
+  [hash_bad]  contains(absent)  :   0.024570 ms/appel
+================================================================
+n = 100000
+-- Dynamic Array ------------------------------------------------
+  build (insert_back x n)      :      0.821 ms
+  get(n/2)                     :   0.000002 ms/appel
+  find(valeur absente)         :   0.041334 ms/appel
+  insert_front                 :   0.046262 ms/appel
+  insert_back                  :   0.000007 ms/appel
+  remove_front                 :   0.080359 ms/appel
+  parcours complet (somme)     :      0.020 ms  (sum controle=1071626859407010)
+-- Linked List --------------------------------------------------
+  build (insert_front x n)     :      5.476 ms
+  get(n/2)                     :   0.139759 ms/appel
+  find(valeur absente)         :   0.287197 ms/appel
+  insert_front                 :   0.000071 ms/appel
+  insert_back                  :   0.277921 ms/appel
+  remove_front                 :   0.000021 ms/appel
+  parcours complet (somme)     :      0.292 ms  (sum controle=1071626859407010)
+-- Hash Table (good vs bad) --------------------------------------
+  [hash_good] build             :      6.075 ms  (chaine max=24)
+  [hash_good] contains(absent)  :   0.000009 ms/appel
+  [hash_bad]  build              :      6.054 ms  (chaine max=100000)
+  [hash_bad]  contains(absent)  :   0.322270 ms/appel
+================================================================
+n = 1000000
+-- Dynamic Array ------------------------------------------------
+  build (insert_back x n)      :      8.839 ms
+  get(n/2)                     :   0.000002 ms/appel
+  find(valeur absente)         :   0.542574 ms/appel
+  insert_front                 :   0.525810 ms/appel
+  insert_back                  :   0.000005 ms/appel
+  remove_front                 :   0.882027 ms/appel
+  parcours complet (somme)     :      0.206 ms  (sum controle=10739048628531280)
+-- Linked List --------------------------------------------------
+  build (insert_front x n)     :     63.187 ms
+  get(n/2)                     :   2.719783 ms/appel
+  find(valeur absente)         :   7.776834 ms/appel
+  insert_front                 :   0.000044 ms/appel
+  insert_back                  :   7.816396 ms/appel
+  remove_front                 :   0.000020 ms/appel
+  parcours complet (somme)     :      8.345 ms  (sum controle=10739048628531280)
+-- Hash Table (good vs bad) --------------------------------------
+  [hash_good] build             :     44.258 ms  (chaine max=139)
+  [hash_good] contains(absent)  :   0.000346 ms/appel
+  [hash_bad]  build              :     42.153 ms  (chaine max=1000000)
+  [hash_bad]  contains(absent)  :   7.611980 ms/appel
+================================================================
