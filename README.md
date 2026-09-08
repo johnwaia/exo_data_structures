@@ -1,4 +1,4 @@
-# Comparaison de structures de données en C
+# Comparaison de structures de données en C de John WAIA
 
 Implémentation et benchmark de trois structures (tableau dynamique, liste
 chaînée, table de hachage), pour choisir la bonne structure selon les
